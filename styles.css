@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#00bdff,#0087ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100hv;
+    color: black;
+}
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: black;
+}
+section {
+    margin-bottom: 20px;
+}
+section h2 {
+    font-size: 1.8rem;
+    color: #00bdff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+section p, ul {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    padding: 10px;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: black;
+    transition: background-color 0.3 ease;
+}
+ul li i {
+    margin-right: 10px;
+}
+ul li:hover {
+    background-color: #e0e0e0;
+}
+ul li a {
+    text-decoration: none; 
+    color: inherit; 
+}
+ul li a:hover {
+    color: #00bdff;
+}
+button {
+    background: linear-gradient(135deg,#00bdff,#0087ff);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: transform 0.5s ease, background 0.5s ease;
+}
+button:hover {
+    transform: scale(1.2);
+    background: linear-gradient(135deg,#0087ff,#00bdff);
+    
+}
+#fect {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #00bdff;
+    display: none; 
+    animation: fadeIn 1s ease;
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Transition effect */
+}
+.fade-in.show {
+    opacity: 1; /* Fully visible */
+}
+
+#profile-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #00bdff;
+    transition: transform 0.5s ease;
+}
+#profile-pic img:hover {
+    transform: scale(1.2);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
